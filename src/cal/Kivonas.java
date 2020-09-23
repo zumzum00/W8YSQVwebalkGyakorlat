@@ -6,6 +6,7 @@ public class Kivonas {
 		return a-b;
 		//kész a kivonás
 		//Kivonás ellenörzése
+		//Kivonás optimalizálva
 	}
 	
 }
