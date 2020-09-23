@@ -7,6 +7,7 @@ public class Kivonas {
 		//kész a kivonás
 		//Kivonás ellenörzése
 		//Kivonás optimalizálva
+		//Kivonás dokumentálva
 	}
 	
 }
