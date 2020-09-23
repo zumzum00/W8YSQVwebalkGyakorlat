@@ -6,6 +6,7 @@ public class Osszeadas {
 		return a+b;
 		//kész
 		//optimalizálva
+		//dokumentálva
 	}
 	
 }
