@@ -7,6 +7,7 @@ public class Wing {
 	private String description;
 	private Floor floor;
 	private WingType type;
+	//Use List<>
 	private ArrayList<Room> rooms;
 
 	public String getDescription() {
