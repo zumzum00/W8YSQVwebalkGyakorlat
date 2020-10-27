@@ -12,10 +12,12 @@ public interface ReservationService {
 	
 	public BookingPerson findBookingPerson(); 
 	
+	//Use List<>
 	public ArrayList<Hotel> findAllHotels(); 
 	
 	public void saveReservation(Reservation r); 
 	
+	//Use List<>
 	public ArrayList<Reservation> findAllReservations();
 	
 	public void checkIn();
