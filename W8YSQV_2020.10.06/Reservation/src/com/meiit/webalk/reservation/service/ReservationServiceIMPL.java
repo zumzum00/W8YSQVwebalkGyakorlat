@@ -8,8 +8,10 @@ import com.meiit.webalk.reservation.domain.*;
 
 public class ReservationServiceIMPL implements ReservationService {
 
+	//Use meaningfull names 1 char is not readable
 	private BookingPerson p;
 	private Hotel h = new Hotel();
+	//Use list
 	private ArrayList<Reservation> rl = new ArrayList<Reservation>();
 
 	@Override
@@ -24,6 +26,7 @@ public class ReservationServiceIMPL implements ReservationService {
 	}
 
 	@Override
+	//Use List<>
 	public ArrayList<Hotel> findAllHotels() {
 		BigDecimal b1 = new BigDecimal("500");
 		BigDecimal b2 = new BigDecimal("1500");
@@ -91,12 +94,16 @@ public class ReservationServiceIMPL implements ReservationService {
 
 	@Override
 	public void checkIn() {
+		//where is the implementation?
 		// TODO Auto-generated method stub
 
 	}
 
 	@Override
 	public void checkOut() {
+		//where is the refund?
+		//Where is the correct implementation?
+		//Syso is forbidden in service!!!!
 		System.out.println("Few days later!\n");
 		System.out.println("Chech out!");
 
