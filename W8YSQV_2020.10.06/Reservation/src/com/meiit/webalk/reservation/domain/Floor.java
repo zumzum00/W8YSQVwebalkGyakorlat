@@ -6,6 +6,7 @@ public class Floor {
 
 	private int floorNumber;
 	private Hotel hotel;
+	//Use List<>
 	private ArrayList<Wing>wings;
 
 	public int getFloorNumber() {
