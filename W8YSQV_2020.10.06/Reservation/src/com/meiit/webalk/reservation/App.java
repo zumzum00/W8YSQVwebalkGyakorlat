@@ -37,6 +37,7 @@ public class App {
 		BookingPerson p = service.findBookingPerson();
 		view.printWelcomeMessage(p);
 		view.printBalance(p);
+		//Lust<> and nameing
 		ArrayList<Hotel> l = new ArrayList<Hotel>();
 		l = service.findAllHotels();
 		view.printRooms(l);
