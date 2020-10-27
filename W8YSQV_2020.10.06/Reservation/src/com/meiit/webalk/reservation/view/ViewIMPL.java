@@ -38,7 +38,7 @@ public class ViewIMPL implements View {
 	@Override
 	public void printRooms(ArrayList<Hotel> l) {
 		System.out.println("Where are you want to book? (choose a number or press q for quit)");
-
+		//This logic should be in a sepoareted helper class
 		int roomi = 0;
 		for (int i = 0; i < l.size(); i++) {
 
@@ -73,7 +73,7 @@ public class ViewIMPL implements View {
 		String b;
 		Room r = null;
 		b = sc.next();
-
+		//This logic should be in a sepoareted helper class
 		int roomi = 0;
 		for (int i = 0; i < l.size(); i++) {
 
@@ -121,6 +121,7 @@ public class ViewIMPL implements View {
 
 	@Override
 	public void printCheckIn(Reservation r) {
+		// This is not the requested message
 		System.out.println("Hilton, Floor: " + r.getRoom().getWing().getFloor().getFloorNumber() + " , Wing:"
 				+ r.getRoom().getWing().getType() + " , Room Number: " + r.getRoom().getNumber() + ", Beds: "
 				+ r.getRoom().getBeds() + ", Room price: " + r.getRoom().getPrice());
@@ -130,6 +131,7 @@ public class ViewIMPL implements View {
 	public void printCheckOut(BookingPerson p, Reservation r) {
 		LocalDateTime now = LocalDateTime.now();
 		if (r.getTo().compareTo(now) == -1) {
+			//Duplicated message
 			System.out.println("Few days later!");
 			System.out.println("Check out!");
 			System.out.println("Your balance is " + p.getBalance() + p.getCurrency());
