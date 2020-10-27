@@ -7,6 +7,7 @@ import com.meiit.webalk.reservation.domain.Hotel;
 import com.meiit.webalk.reservation.domain.Reservation;
 import com.meiit.webalk.reservation.domain.Room;
 
+//List<>, NAMEING
 public interface View {
 
 	public BookingPerson readBookingPerson();
